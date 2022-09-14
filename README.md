@@ -1,6 +1,6 @@
 # RPG MAP
 
-**Número da Lista**: X<br>
+**Número da Lista**: 17<br>
 **Conteúdo da Disciplina**: Final<br>
 
 ## Alunos
@@ -10,7 +10,8 @@
 | 18/0106805  |  Mateus Cunha Maia |
 
 ## Sobre 
-O projeto mostra a menor rota entre um país e outro em um mapa de RPG, utilizando o algoritmo Dijkstra.
+Um caixeiro viajante chamado Nitovisk no universo de Innistrad deseja otimizar suas vendas e suas viagens. Para isso, criamos um software para auxiliá-lo. 
+O software cadastra os produtos que ele deseja levar na viagem, sendo que ele existe um peso máximo que ele conseguirá carregar nessa viagem. Além disso, calcula a melhor rota para ele ir de um país a outra e retorna o lucro máximo que ele poderá obter na viagem.
 
 ## Screenshots
 

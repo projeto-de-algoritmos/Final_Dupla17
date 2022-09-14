@@ -14,6 +14,21 @@ O projeto mostra a menor rota entre um país e outro em um mapa de RPG, utilizan
 
 ## Screenshots
 
+![Tela Inicial](./assets/home_page.jpeg)
+</figcaption>
+    Imagem 1: Tela Inicial
+</figcaption>
+
+![Tela de Resultado](./assets/results_1.jpeg)
+</figcaption>
+    Imagem 2: Tela de Resultado 1
+</figcaption>
+
+![Tela de Resultado](./assets/results_2.jpeg)
+</figcaption>
+    Imagem 3: Tela de Resultado 2
+</figcaption>
+
 ## Instalação 
 **Linguagem**: python e javascript<br>
 **Framework**: react js<br>

@@ -12,7 +12,11 @@ function App() {
   const [countries, setCountries] = useState([]);
   const [initialCountry, setInitialCountry] = useState("");
   const [finalCountry, setFinalCountry] = useState("");
-  const [result, setResult] = useState([])
+  const [result, setResult] = useState([]);
+  const [stock, setStock] = useState([]);
+  const [productName, setProductName] = useState("");
+  const [weight, setWeight] = useState("");
+  const [value, setValue] = useState("");
 
   useEffect(()=>{
     const initCountries = async () => {
@@ -35,6 +39,10 @@ function App() {
       destination: finalCountry
     })
     setResult(res.data.path);
+  }
+
+  const registerProduct = async () => {
+    setStock([...stock, {productName, weight, value}])
   }
 
   return (
@@ -65,6 +73,31 @@ function App() {
         />
 
         <button type="submit" onClick={findPath}>Enviar</button>
+
+      </div>
+
+      <div className="InputContainer">
+      
+        <input placeholder="Nome do produto" 
+            value={productName}
+            onChange={e=>setProductName(e.target.value)}
+        />
+        <input placeholder="Peso do produto" 
+          value={weight}
+          onChange={e=>setWeight(e.target.value)}
+        />
+        <input placeholder="Valor do produto" 
+          value={value}
+          onChange={e=>setValue(e.target.value)}
+        />
+
+        <button type="submit" onClick={registerProduct}>Registrar</button>
+
+        <ul>
+            {stock.map((p) => (
+                <p>{p.productName}</p>
+            ))}
+        </ul>
 
       </div>
 

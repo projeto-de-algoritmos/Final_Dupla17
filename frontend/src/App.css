@@ -13,7 +13,63 @@
   align-items: center;
 }
 
-.InputField {
+.SelectField {
   width: 400px;
   margin-right: 10px;
+}
+
+.InputLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Label {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.InputField {
+  height: 35px;
+  color: #333;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 0 12px;
+  margin-right: 5px;
+  width: 250px;
+}
+
+.Button {
+  width: 80px;
+  height: 30px;
+  background: pink;
+  border: 0;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: filter 0.2s;
+  cursor: pointer;
+}
+
+.Button:hover {
+  filter: brightness(90%);
+}
+
+.SendButton {
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  background: lightblue;
+  border: 0;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: filter 0.2s;
+  cursor: pointer;
+}
+
+.SendButton:hover {
+  filter: brightness(90%);
 }

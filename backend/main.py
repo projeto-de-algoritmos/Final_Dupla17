@@ -3,8 +3,8 @@ import json
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.schemas import Path
-from backend.app.structures.functions import Graph
+from app.schemas import Path, Merchandise
+from app.structures.functions import Graph
 from app.edges import countries as edges
 
 
@@ -33,6 +33,16 @@ def get_countries():
     countries = graph.get_nodes()
     return dict(countries=countries)
 
+@app.post('/merchandise')
+def find_best_profit(merchandise: Merchandise):
+    #print(merchandise)
+    profit = graph.knapSack(
+        merchandise.max_weight,
+        merchandise.weights,
+        merchandise.values,
+        len(merchandise.values)
+    )
+    return dict(profit=profit)
 
 if __name__ == '__main__':
     uvicorn.run(app, host='0.0.0.0', port=8000)

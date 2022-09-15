@@ -13,6 +13,9 @@
 Um caixeiro viajante chamado Nitovisk no universo de Innistrad deseja otimizar suas vendas e suas viagens. Para isso, criamos um software para auxiliá-lo. 
 O software cadastra os produtos que ele deseja levar na viagem, sendo que ele existe um peso máximo que ele conseguirá carregar nessa viagem. Além disso, calcula a melhor rota para ele ir de um país a outra e retorna o lucro máximo que ele poderá obter na viagem.
 
+## Apresentação
+A apresentação do projeto pode ser vista no seguinte [link](https://youtu.be/ADjFOENr8HM).
+
 ## Screenshots
 
 ![Tela Inicial](./assets/home_page.jpeg)
